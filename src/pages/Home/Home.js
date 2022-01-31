@@ -51,4 +51,4 @@ const mapStateToProps = state =>({
     searchName: state.search.searchField
 })
 
-export default connect(mapStateToProps,mapDispatchToProps)(Home)
+export default connect(mapStateToProps,mapDispatchToProps) (Home)
