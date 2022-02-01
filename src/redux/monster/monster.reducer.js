@@ -1,10 +1,9 @@
-import { monsterActionTypes } from "./monster.tye";
+import { monsterActionTypes } from "./monster.type";
 
-export const INITIAL_STATE = {
+const INITIAL_STATE = {
     searchField: ''
-   
 }
-export const searchReducer = (sate = INITIAL_STATE, action )=> {
+export const searchReducer = (state = INITIAL_STATE, action )=> {
     switch (action.type) {
         case monsterActionTypes.SEARCH_MONSTER:
             return{
@@ -15,6 +14,6 @@ export const searchReducer = (sate = INITIAL_STATE, action )=> {
             }
             
         default:
-           return sate
+           return state
     }
 }

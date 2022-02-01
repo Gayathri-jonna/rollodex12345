@@ -1,4 +1,4 @@
-import { monsterActionTypes } from "./monster.tye";
+import { monsterActionTypes } from "./monster.type";
 
 // Search monster action creator is getting us payload of username from the home component 
 export const searchMonster =(username) => ({
